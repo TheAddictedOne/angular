@@ -1,0 +1,23 @@
+<h1>{{ title }}</h1>
+<div>
+  <table *ngIf="products.length">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Code</th>
+        <th>Available</th>
+        <th>Price</th>
+        <th>Starz</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products">
+        <td>{{ p.name }}</td>
+        <td>{{ p.code }}</td>
+        <td>{{ p.date }}</td>
+        <td>{{ p.price }}</td>
+        <td>{{ p.starz }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
